@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script language = "JavaScript">
+function add()
+{
+var number1, number2, sum;
+
+number1 = parseInt(document.addition.FirstNumber.value);
+
+
+if (number1 > 0)
+{  
+sum = number1 * 5;
+}
+if (number1 >=5)
+{
+sum = number1 * 10;
+}
+if (number1 >=10)
+{
+sum = number1 * 15;
+}
+if (number1 <=0)
+{
+       window.alert("Number of Marks has to be positive. Re-enter the number and hit the button");
+       sum = 0;
+     }
+     
+document.addition.sum1.value = sum;
+
+}
+</script>
+
+</head>
+
+<body>
+    
+
+<form name = "addition">
+Aditional Marks <input name = "FirstNumber" type = "text" size="5"><br>
+Total Cost <input name = "sum1" type = "text" size="5"><br>
+<input type = "button" value = "Go for It" onclick = "add()">
+</form>
+
+</body>
+
+</html>
